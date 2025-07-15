@@ -1,0 +1,23 @@
+.abc{
+    height: 200px;
+    width: 200px;
+    color: red;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 10px;
+    float:left;
+    /* content-box  */
+    box-sizing: border-box; 
+    /* //width+border+margin+padding = 220px */
+    /* //width+border+margin -10 +padding = 200px - 180px +20px padding */
+}
+.fr{
+    float: right;
+}
+#txt{
+    clear: both;
+    color:wheat;
+}
+p{
+    color:purple
+}

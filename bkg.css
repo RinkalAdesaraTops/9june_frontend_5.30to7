@@ -1,0 +1,12 @@
+.box{
+    height: 700px;
+    width: 600px;
+    color: brown;
+    border: 2px solid black;
+    background-image: url('sonu.jpg');
+    background-repeat: no-repeat;
+    background-position: 30% 50%;
+    /* contain cover auto */
+    background-size: cover; 
+    background-attachment: fixed;
+}
