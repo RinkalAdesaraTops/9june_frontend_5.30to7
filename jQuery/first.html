@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: yellow;
+            border:2px solid black;
+        }
+        .bgRed{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="demo">hello</div>
+    <div class="box">ksdfg dfjgdfg</div>
+    <button onclick="changeData()">Change Text</button>
+    <button onclick="disp()">Show</button>
+    <button onclick="notdisp()">Hide</button>
+    <button onclick="changeBKG()">Change BackgroundColor</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        function changeData(){
+            // $("#demo").text("Hiii")
+            // $("#demo").html("<b>Hello</b>")
+            $("#demo").text("<b>Hello</b>")
+        }
+        function disp(){
+            $("#demo").show()
+        }
+        function notdisp(){
+            $("#demo").hide()
+        }
+        function changeBKG(){
+            $('.box').addClass('bgRed')
+        }
+    </script>
+</body>
+</html>
