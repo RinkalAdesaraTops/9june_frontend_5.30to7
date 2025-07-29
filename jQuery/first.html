@@ -10,6 +10,8 @@
             width: 50px;
             background-color: yellow;
             border:2px solid black;
+            padding: 10px;
+            margin:10px
         }
         .bgRed{
             background-color: red;
@@ -23,12 +25,13 @@
     <button onclick="disp()">Show</button>
     <button onclick="notdisp()">Hide</button>
     <button onclick="changeBKG()">Change BackgroundColor</button>
+    <button onclick="rmvBKG()">Remove BackgroundColor</button>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
         function changeData(){
             // $("#demo").text("Hiii")
-            // $("#demo").html("<b>Hello</b>")
-            $("#demo").text("<b>Hello</b>")
+            $("#demo").html("<b>Hello</b>")
+            // $("#demo").text("<b>Hello</b>")
         }
         function disp(){
             $("#demo").show()
@@ -38,6 +41,9 @@
         }
         function changeBKG(){
             $('.box').addClass('bgRed')
+        }
+        function rmvBKG(){
+            $('.box').removeClass('bgRed')
         }
     </script>
 </body>
