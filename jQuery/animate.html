@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .box {
+            height: 100px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: aquamarine;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">dfgdfgdf</div>
+    <button onclick="changeAnim()">Add</button>
+    <button onclick="stopAnim()">Stop</button>
+    <script>
+        function changeAnim() {
+            $(".box").animate({
+                width: '300px',
+                opacity:'0.4',
+                fontSize:'10px'
+            }, 5000)
+        }
+        function stopAnim(){
+            $(".box").stop()
+        }
+    </script>
+</body>
+
+</html>
