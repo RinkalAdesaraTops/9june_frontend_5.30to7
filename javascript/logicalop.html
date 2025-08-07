@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // && || !
+        let a=250
+        let b=35
+        let c=20
+        document.write('<br> a b and c is'+(a>b && a>c))
+        document.write('<br> a b or c is'+(a>b || a>c))
+        document.write('<br>a gt b is '+(a>b))
+        document.write('<br> ! a gt b is '+!(a>b))
+        //typeof operator
+        document.write('<br> 10 is '+typeof(10))
+        document.write('<br> 10.54 is '+typeof(10.54))
+        document.write('<br> char is '+typeof('R'))
+        document.write('<br> string is '+typeof("kdjfghkdj"))
+        document.write('<br> true false is '+typeof(true))
+        let x
+        document.write('<br> x is '+typeof(x))
+        x=null
+        document.write('<br> x is '+typeof(x))
+        x=[]
+        document.write('<br> x is '+typeof(x))
+        x={}
+        document.write('<br> x is '+typeof(x))
+
+        // String operator
+        // x=parseInt(prompt("Enter x:"))
+        // y=parseFloat(prompt("Enter y:"))
+        // document.write('<br>addition is '+(x+y))
+
+        // ternary ?:
+        document.write(a>b?"A is max":"b is max")
+
+    </script>
+</body>
+</html>
