@@ -9,13 +9,14 @@
     <script>
         // 153
         //1^3 + 5^3 + 3^3 = 153
-        let no=153
+        let no=158
         let sum=0
         let f=no
+        let len = no.toString().length
         while(no>0){
             let r=no%10
             no = Math.floor(no/10)
-            sum = sum + (r**3)
+            sum = sum + (r**len)
         }
         document.write('<br>No is '+f)
         document.write('<br>Sum of digits '+sum)
