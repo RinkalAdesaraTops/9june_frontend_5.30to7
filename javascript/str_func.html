@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "hi hello Hi How are you hi?"
+        document.write('<br>length is '+str.length)
+        document.write('<br>Uppercase -- '+str.toUpperCase())
+        document.write('<br>Lowercase -- '+str.toLowerCase())
+        let rp = str.replaceAll(/hi/ig,"TEST")
+        document.write('<br>'+rp)
+        // slice function
+        let str2 = str.substr(3,8)
+        document.write('<br>'+str2)
+        str2="    kjdsgh ksgf jskdgfjh   "
+        document.write('<br><hr>')
+        // trim() trimStart & trimEnd()
+        document.write('<br>String is '+str2.length)
+        document.write('<br>String is '+str2.trim().length)
+        document.write('<br>String is '+str2.trimStart().length)
+        document.write('<br>String is '+str2.trimEnd().length)
+        document.write('<br><hr>')
+        //padStart() & padEnd()
+        str="345"
+        str1 = str.padStart(6,"Rs") //RsR345
+        document.write('<br>Start is '+str1)
+        str1 = str.padEnd(6,"Rs") //RsR345
+        document.write('<br>Start is '+str1)
+    </script>
+</body>
+</html>

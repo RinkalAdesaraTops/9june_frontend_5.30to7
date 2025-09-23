@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,50]
+        // document.write('<br>'+arr[0])
+        // for(var x in arr){
+        //     document.write('<br>x is '+x+'--'+arr[x])
+        // }
+        // document.write('<br><hr>')
+        // for(var x of arr){
+        //     document.write('<br>'+x)
+        // }
+        document.write('<br>'+arr)
+        arr.push(56,67,78)
+        document.write('<br>'+arr)
+        arr.unshift(100,200,400)
+        document.write('<br>'+arr)
+        arr.pop()
+        document.write('<br>'+arr)
+        arr.shift()
+        document.write('<br>'+arr)
+        let arr1 = arr.slice(3)
+        document.write('<br>'+arr1)
+        arr1 = arr.slice(-5)
+        document.write('<br>'+arr1)
+        arr1 = arr.slice(3,8)
+        document.write('<br>'+arr1)
+        arr1 = arr.slice(-7,-2)
+        document.write('<br>'+arr1)
+        arr.splice(3,2,222,333,444)
+        document.write('<br>'+arr)
+        arr = [56,67,450,100,24,34,8]
+        document.write('<br> Sorting is '+arr.sort((a,b)=>{
+            return b-a //56-67 = -ve 34-8=+ve
+        }))
+        document.write('<br>Reverse is '+arr.reverse())
+        document.write('<br>'+arr.includes(240))
+    </script>
+</body>
+</html>
