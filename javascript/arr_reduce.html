@@ -36,6 +36,17 @@
                 "ery":1
             }
         */
+       let result = arr.reduce((i,j)=>{
+                if(i[j]){ //{ "abc"}
+                    i[j]++
+                } else {
+                    i[j]=1
+                }
+                return i
+       },{})
+       console.log("Result is ");
+       console.log(result);
+       
     </script>
 </body>
 </html>
