@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [10,20,30,40,20]
+        let ans = arr.map((i,index)=>{
+            return i*2
+        })
+        document.write('<br>Array is '+arr)
+        document.write('<br>Ans Array is '+ans)
+        // filter function - search data & return array
+        let res = arr.filter((i)=>{
+            return i==20
+        })
+        console.log(res);
+        // find - search data & return single value
+        res = arr.find((i)=>{
+            return i==20
+        })
+        console.log(res);
+        //includes - search data & return boolean value (true/false)
+        res = arr.includes(200)
+        console.log(res);
+        
+    </script>
+</body>
+</html>

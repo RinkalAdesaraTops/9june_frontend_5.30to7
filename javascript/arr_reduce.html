@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- reduce,reduceRight,some & every -->
+    <script>
+        let arr = [10,20,30,40,50]
+        let sum = arr.reduceRight((a,b)=>{
+                // document.write('<br>A is '+a)
+                // document.write('<br>B is '+b)
+                    return a+b //a=10 b=20 a=30 b
+        })
+        document.write('<br>Sum is '+sum)
+        arr = [45,56,34,23,44]
+        let res = arr.reduce((i,j)=>{   
+                if(i<j){ //45<56
+                    i=j
+                }
+                return i
+        })
+        document.write('<br>Max element is '+res)
+        res = arr.every((i)=>i%2==0)
+        document.write('<br>Result is '+res)
+        res = arr.some((i)=>i%2==0)
+        document.write('<br>Result is '+res)
+        arr = ["abc","xyz","pqr","abc","ery","abc","xyz"]
+        /*
+            {
+                "abc":3,
+                "xyz":2,
+                "pqr":1,
+                "ery":1
+            }
+        */
+    </script>
+</body>
+</html>

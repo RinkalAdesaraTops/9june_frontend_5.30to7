@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+            "name":"test",
+            "age":25,
+            "salary":25600,
+            disp:function(){
+                return this.name+"---"+this.age
+            },
+            get dispSal(){
+                return this.salary
+            },
+            set changeSal(a){
+                this.salary = a
+            }
+        }
+        document.write('<br>Salary is '+user.dispSal)
+        user.changeSal = 35000
+        document.write('<br>Salary is '+user.dispSal)
+
+        for(var a in user){
+            // document.write('<br>'+a+" is "+user[a])
+        }
+        // insert 
+        user.lastname = "tetyttydsf"
+        user.age = 30  //update
+        // delete user.salary //delete 
+        document.write('<br><hr>')
+        for(var a in user){
+            // document.write('<br>'+a+" is "+user[a])
+        }
+        document.write('<br>Name & age is '+user.disp())
+        // document.write('<br>Name is '+user['name'])
+        // document.write('<br>Age is '+user.age)
+    </script>
+</body>
+</html>
