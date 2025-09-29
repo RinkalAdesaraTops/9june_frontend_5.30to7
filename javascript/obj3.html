@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let obj = {
+            "name":"Abcd",
+            "age":25,
+            "salary":45000,
+            disp:function(){
+                return this.name+"--"+this.age
+            },
+            get getData(){
+                return this.salary
+            },
+            set changeSal(a){
+                this.salary = a
+            }
+        }
+        document.write('<br>Name  & age is '+obj.disp())
+        document.write('<br>Salary is '+obj.getData)
+        obj.changeSal = 60000
+        document.write('<br>Salary is '+obj.getData)
+
+    </script>
+</body>
+</html>

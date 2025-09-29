@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">Hiii</div>
+    <div id="dem1">0</div>
+    <script>
+        setTimeout(()=>{
+            document.getElementById('demo').innerHTML = "Hello"
+        },2000)
+        let count = 0
+        setInterval(()=>{
+            document.getElementById('dem1').innerHTML = count++
+        },2000)
+    </script>
+</body>
+</html>

@@ -9,7 +9,11 @@
     <script>
         let obj = {
             "name":"hgterh",
-            "age":25
+            "age":25,
+            "salary":45000,
+            disp:function(){
+                return this.name+"--"+this.age
+            }
         }
         document.write('<br>Name is '+obj.name)
         document.write('<br>Age is '+obj['age'])

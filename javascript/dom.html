@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <div id="demo1"></div>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repellendus praesentium laborum ab nesciunt
+        vitae recusandae eius ipsa est, nulla veniam dicta perferendis quibusdam commodi alias aspernatur earum, sit
+        porro?</p>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repellendus praesentium laborum ab nesciunt
+        vitae recusandae eius ipsa est, nulla veniam dicta perferendis quibusdam commodi alias aspernatur earum, sit
+        porro?</p>
+    <p >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repellendus praesentium laborum ab nesciunt
+        vitae recusandae eius ipsa est, nulla veniam dicta perferendis quibusdam commodi alias aspernatur earum, sit
+        porro?</p>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repellendus praesentium laborum ab nesciunt
+        vitae recusandae eius ipsa est, nulla veniam dicta perferendis quibusdam commodi alias aspernatur earum, sit
+        porro?</p>
+    <p class="abc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi repellendus praesentium laborum ab nesciunt
+        vitae recusandae eius ipsa est, nulla veniam dicta perferendis quibusdam commodi alias aspernatur earum, sit
+        porro?</p>
+    <script>
+        document.getElementById('demo').innerHTML = "<b>Hello</b>"
+        document.getElementById('demo').style.color = "red"
+        document.getElementById('demo').style.backgroundColor = "Yellow"
+        // let a = document.getElementsByTagName("p")
+        let a = document.getElementsByClassName("abc")
+        // Name
+        for (let i = 0; i < a.length; i++) {
+            if ((i + 1) % 2 == 0) {
+                a[i].style.color = "green"
+            } else {
+                a[i].style.color = "blue"
+            }
+        }
+        // document.getElementById('demo1').innerText = "<b>Hello</b>"
+    </script>
+</body>
+
+</html>
