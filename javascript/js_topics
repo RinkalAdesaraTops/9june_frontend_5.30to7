@@ -1,21 +1,33 @@
-let var const
+what is js?
+types of js
+let var & const
 operators
-loop
+if_else elseif nestedif
+switch
+while,do_while & for loop
 array
-func
-string
+for_of & for_in loop
+array_func
+string _func
+DOM
+BOM
+UDF
+arrow function
 object
-array_advance func
-UDF function
-arrow func
-------------------------------------------------------------
-dom & bom
+map,filter advance func
 spreading,merging & destructuring & rest of operator 
-eventListener
+object destructuring
 High order function
-oops
-localstorage
-callback,hell & promises
-try,catch
-validation 
+eventListener
+====================================================
 
+callback-hell-promises-async-await
+exception 
+oops
+1)class - object
+2)inheritance 
+3)polymorphism
+4)data abstraction & encapsulation
+constructor - 2 types - default & parameterized 
+validation js
+localstorage crud

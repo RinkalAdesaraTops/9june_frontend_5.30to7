@@ -8,7 +8,21 @@
 <body>
     <div id="demo">Hiii</div>
     <div id="dem1">0</div>
+    <hr>
+    <span id="hours">00</span>:
+    <span id="min">00</span>:
+    <span id="sec">00</span>
     <script>
+        let sec = 0
+        let min = 0
+        let hour = 0
+        setInterval(()=>{
+            document.getElementById('sec').innerHTML = sec++
+            if(sec>10){
+                document.getElementById('min').innerHTML = ++min
+                sec=0
+            }
+        },1000)
         setTimeout(()=>{
             document.getElementById('demo').innerHTML = "Hello"
         },2000)
