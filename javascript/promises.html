@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = 14 
+        let pr = new Promise((rs,rj)=>{
+                if(age>=18){
+                    rs("ELigible 4 vote")
+                } else {
+                    rj("Not ELigible 4 vote")
+                }
+        }).then((msg)=>console.log(msg))
+        .catch((msg)=>console.log("Error is -- "+msg))
+
+        // pending
+        //fulfilled
+        //rejected
+        // let pr = new Promise((res,rej)=>{
+        //         rej("Promise rejected...")
+        //         // res("Promises completed")
+        // }).then((msg)=>console.log(msg))
+        // .catch((msg)=>console.log(msg))
+    </script>
+</body>
+</html>

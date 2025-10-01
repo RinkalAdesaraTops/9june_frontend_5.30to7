@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* class & object
+        constructor
+            ==>default
+            ==>parameterized constructor
+// this.emp_id = 101
+                // this.name="abc"
+                // this.email = "abc@mail.com"
+        */
+        class emp{
+            // default constructor
+            //parameterized constructor
+            constructor(a,b,c){ //special member function 
+                //it is automaticalled when object is created
+                this.emp_id = a
+                this.name=b
+                this.email = c
+                
+            }
+            disp(){
+                document.write('<br>Id -- Name -- Email---')
+                document.write('<br>'+this.emp_id+"---"+this.name+"----"+this.email)
+            }
+        }
+        let e1 = new emp(111,"fdsfsdf","hghfd@mail.com")
+        e1.disp()
+    </script>
+</body>
+</html>
