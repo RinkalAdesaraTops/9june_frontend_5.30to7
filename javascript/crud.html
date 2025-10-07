@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Localstorage CRUD Example</h3>
+    <form action="#" method="post" name="frm">
+        Name: <input type="text" name="name" id="name"><br><br>        
+        Age: <input type="number" name="age" id="age"><br><br>       
+        Salary: <input type="number" name="salary" id="salary"><br><br>      
+        <input type="button" value="Save" onclick="savedata()"><br><br>
+    </form><br><br>
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Salary</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="alldata"></tbody>
+    </table>
+    <script src="crud.js"></script>
+</body>
+</html>
