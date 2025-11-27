@@ -6,6 +6,9 @@ import ClassExample from './ClassExample'
 import LifecycleClass from './LifecycleClass'
 import Usercomponent from './Usercomponent'
 import Empcomponent from './Empcomponent'
+import ApiExample from './ApiExample'
+import ApiCrud from './ApiCrud'
+
 
 function App() {
   return (
@@ -14,7 +17,9 @@ function App() {
         {/* <ClassExample /> */}
         {/* <LifecycleClass myname="test" /> */}
         {/* <Usercomponent /> */}
-        <Empcomponent />
+        {/* <Empcomponent /> */}
+        {/* <ApiExample /> */}
+        <ApiCrud />
     </>
   )
 }
